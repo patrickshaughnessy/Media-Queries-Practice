@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+}
+
+.box {
+  height: 100px;
+  border: 1px solid blue;
+  margin: 10px;
+  background-color: green;
+}
+
+.container {
+  width: 60%;
+  height: 60vw;
+  border: 2px solid blue;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 500px) {
+  .box {
+    /*display: inline-block;*/
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 699px) {
+  .box {
+    /*background-color: green;*/
+    width: 41%;
+    height: 41%;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 699px) {
+  .box {
+    /*background-color: green;*/
+    width: 27%;
+    height: 27%;
+    display: inline-block;
+  }
+}
